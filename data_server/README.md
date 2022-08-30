@@ -8,6 +8,9 @@
 ## Kafka 운영 커맨드
 
 ```sh
+# Must build kafka project first
+$ ./gradlew jar -PscalaVersion=2.13.6
+
 # Start Zookeeper service << Soon, Zookeeper will no longer be required by Apache Kafka
 $ bin/zookeer-server-start.sh config/zookeeper.properties
 
